@@ -74,10 +74,10 @@ fn main() {
 
         let oponent = Oponent {}
             .get_handshape(&round[0])
-            .expect("Invalid handshape code for a My Player. Check your input file.");
+            .expect("Invalid handshape code for a Oponent. Check your input file.");
         let my_player = MyPlayer {}
             .get_handshape(&round[1])
-            .expect("Invalid handshape code for a Oponent. Check your input file.");
+            .expect("Invalid handshape code for a My Player. Check your input file.");
 
         let bonus = match my_player {
             HandShapes::Rock => 1,
